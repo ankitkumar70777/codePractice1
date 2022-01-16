@@ -1,0 +1,13 @@
+instal git
+check git version  git --version
+config list : git config --list
+
+initilize folder to git repo : git init
+when initilization it will mask that folder as master
+
+folder git status : git status
+git add .(all files) / git add index.html (specific file) : add all file to git repo 
+git commit -m "message" :commit curunt folder status to repo  
+git log --oneline / git log : for git logs
+git checkout d81dba1 index.html : pullout older version of files nad replacce curunt dir with it
+git reset HEAD index.html

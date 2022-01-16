@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form method="post" action="server.php"  target="_blank">
+        <fieldset>
+            <legend>irctc form</legend>
+        <label for="fname">name : </label>
+        <input type="text" id="fname" name="fname" value="">
+        <br>
+        <span>gender : </span>
+        <label for="male">male  </label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="female">female  </label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="other">other  </label>
+        <input type="radio" id="other" name="gender" value="other">
+        <br>
+
+        <span>location to travel: </span>
+        <label for="mumbai">mumbai  </label>
+        <input type="checkbox" name="location[]" id="mumbai" value="mumbai">
+
+        <label for="wada">wada  </label>
+        <input type="checkbox" name="location[]" id="wada" value="wada">
+        
+        <label for="palghar">palghar  </label>
+        <input type="checkbox" name="location[]" id="palghar" value="palghar">
+        
+        <label for="thane">thane  </label>
+        <input type="checkbox" name="location[]" id="thane" value="thane">
+        
+        <br>
+
+        <label for="selectionPayment">payment By : </label>
+        <select name="selectionPayment" id="selectionPayment" size="1" >
+            <option value="selectValue"  selected>select payment Method</option>
+            <option value="upi">UPI</option>
+            <option value="creditDebitCard">credit / debit card</option>
+            <option value="netbanking">netbanking</option>
+            <option value="cash">cash</option>
+        </select>
+<br>
+
+<input list="pickup" name="pickup">
+<datalist id="pickup">
+    <option value="rabale">rabale</option>
+    <option value="airoli">airoli</option>
+    <option value="ghansoli">ghansoli</option>
+</datalist>
+
+<br>
+<label for="usersFeedback">users feedback : </label>
+<textarea name="usersFeedback" id="usersFeedback" style="height: 100px;width:300px;"; placeholder="your feebback is most valuable thing to use">
+</textarea>
+
+<br>
+
+
+
+        <button type="submit" name="submit" value="submit">submit</button>
+        </fieldset>
+    </form>
+
+<br><br><br>
+<form method="POST" target="_blank" action="server.php">
+    <label for="fname1">first name : </label>
+    <input type="text" id="fname1" name="fname" value="111" maxlength="5">
+    <br>
+
+    <label for="password">password : </label>
+    <input type="password" name="password" id="password" pattern="[A-Za-z1-10]">
+
+    <br>
+
+    <span>gender : </span>
+    <label for="male1">male</label>
+    <input type="radio" name="gender" value="male" id="male1">
+
+    <label for="female1">female</label>
+    <input type="radio" name="gender" value="female" id="female1">
+
+    <label for="other1">other</label>
+    <input type="radio" name="gender" value="other" id="other1" checked>
+
+<br>
+    <input type="checkbox" name="bike" value="" id="bike">
+    <label for="bike">i have a bike</label>
+
+    <input type="checkbox" name="car" value="" id="car" checked>
+    <label for="car">i have a car</label>
+
+    <input type="checkbox" name="riksha" value="" id="riksha" checked>
+    <label for="riksha">i have a riksha</label>
+
+<br>
+    <input type="button" name="show alert" onclick="alert('good morning')" value="show alert" disabled>
+<br>
+<label for="mycolor">select any color</label>
+    <input type="color" name="color" value="" id="mycolor">
+<br>
+<label for="mydate">select your birthdate</label>
+    <input type="date" name="mydate" value="" id="mydate" min="2021-03-04" max="2021-03-25" >
+<br>
+
+<label for="datetimeOfVisit">data time Of Visit</label>
+<input type="datetime-local" name="datetime" value="" id="datetimeOfVisit">
+<br>
+
+    <label for="email1">email : </label>
+    <input type="email" name="email" id="email1" value="email1" >
+<br>
+
+    <label for="file1">email : </label>
+    <input type="file" name="file1" id="file1" value="file1">
+<br>
+
+<label for="birthMonth">birthday montha</label>
+<input type="month" name="month1" value="" id="birthMonth">
+
+<br>
+
+<label for="age1">your age</label>
+<input type="number" name="age" value="" id="age1" min="1" max="15" step="2">
+<br>
+<label for="salaryRange"></label>
+<input type="range" name="salaryRange" id="salaryRange" min="5" max="10">
+
+<br>
+<label name="telephone">enter your contact number</label>
+<input type="tel" name="telephone" id="telephone" val="">
+<br>
+
+<label for="time1">enter meeting time</label>
+<input type="time" name="time1" id="time1" value="">
+
+<br>
+<label for="url1"></label>
+<input type="url" name="url1" id="url1" value="url1">
+</br>
+
+<label for="week1">week</label>
+<input type="week" name="week1" id="week1" val="">
+<br>
+<label for="gserach">search</label>
+<input type="search" name="gsearch" id="gserach">
+
+    <input type="submit" name="submit value="submit">
+    <input type="reset" name="reset" value="reset">
+<br>    
+
+</form>
+
+
+<hr>
+
+
+<form target="blank" action="server.php" method="post" id="empDetails">
+    <label for="fname">first Name</label>
+        <input type="text" name="fname" id="fname" value="ankit" maxlength="5">
+        <br>
+    <label for="lname">last Name</label>
+        <input type="text" name="lname" id="lname" value="revidas" >
+        <br>
+    <input type="submit" name="submit" value="submit">
+</form>
+
+<label for="telephone">mob no</label>
+<input type="tel" name="telephone" id="telephone" form="empDetails">
+
+
+
+</body>
+</html>

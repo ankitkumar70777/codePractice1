@@ -1,0 +1,75 @@
+* {
+  /* border: 1px solid red; */
+}
+
+#navbarSupportedContent a:hover {
+  background-color: aqua;
+}
+
+.navFontSize {
+  font-size: 1.5rem;
+}
+
+.activeMenu {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+  text-decoration-thickness: 5px;
+  font-weight: bold;
+}
+
+.homeDiv {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.homeText {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  flex: 50%;
+  padding: 30px;
+}
+
+.homeText > h1 {
+  font-size: 4rem;
+}
+
+.homeText > h1 > span {
+  color: blue;
+}
+
+.homeText > p {
+  font-size: 1.8rem;
+}
+
+.homeText > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.homeText > div > button {
+  border: 2px solid blue;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50px;
+  color: blue;
+  background-color: white;
+}
+
+.homeText > div > button:hover {
+  background-color: aqua;
+}
+
+.homeText > div > button > a {
+  text-decoration: none;
+}
+
+.homeImage {
+  flex: 50%;
+}
+
+.homeImage > img {
+  width: 100%;
+  height: 40rem;
+}

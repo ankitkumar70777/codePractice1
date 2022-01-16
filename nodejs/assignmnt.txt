@@ -1,0 +1,8 @@
+1.) Explore what is nodemailer, how to use it , and create an api to send emails.
+2). Explore middleware , use middleware for  req body validations purpose.
+3). Create a book directory: perform CRUD operation
+Fields : bookname, price, author, language, aboutAuthor;
+Take bookname unique 
+WHile creating new book in DB first check the book existence if there is a book with the same name,
+then throw err.
+Same existence check with update operation.

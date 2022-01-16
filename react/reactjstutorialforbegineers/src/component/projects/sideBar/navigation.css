@@ -1,0 +1,39 @@
+.navigationMenu {
+  border: 1px solid blue;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  border: 1px solid rgb(20, 20, 18);
+}
+
+.menu > a,
+span {
+  background-color: rgb(189, 108, 9);
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.webBody {
+  display: flex;
+  border: 1px solid rgb(241, 138, 12);
+}
+
+.sideMenu {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 20%;
+  border: 1px solid rgb(241, 138, 12);
+}
+
+.sideMenu > a {
+  border: 1px solid rgb(241, 138, 12);
+  padding: 5px;
+}
+
+.sideMenuBody {
+  border: 1px solid rgb(241, 12, 12);
+  flex: 80%;
+  background-color: crimson;
+}

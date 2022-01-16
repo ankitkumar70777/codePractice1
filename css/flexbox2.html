@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+        <title>html scripts</title>
+        <meta charset="utf-8">
+        <!-- <meta name="keywords" content="html, css, javascript"> -->
+        <!-- <meta name="description" content="free web tutorials"> -->
+        <!-- <meta http-equiv="refresh" content="5"> -->
+        <!-- <meta name="author" content="ankit"> -->
+        <meta name="viewport" content="width='device-width,initial-scale=1.0'">
+        <!-- <base href="media/" target="_blank"> -->
+        <style type="text/css">
+           .a{
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+        }  
+        .header{
+            background-color: cyan;
+            padding: 1px;
+            text-align: center;
+
+        }
+        .navbar{
+            display: flex;
+            background-color: #333;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 1em;
+            color:white;
+            padding: 15px 20px;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color:black;
+        }
+        .navbar div{
+            flex-basis: 10%;
+            align-self: center;
+            justify-content: 
+
+        }
+        body{
+            box-sizing: border-box;
+            border : 1px solid black;
+            margin-top: 0 ;
+            margin-bottom:  0 ;
+
+        }
+        .row{
+               
+             display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 30%;
+            background-color: yellow;
+            padding: 5px;
+        }
+        .mainContent{
+            flex: 60%;
+            background-color: red;
+            padding: 20px;
+        }
+        .footer{
+            text-align: center;
+            padding: 10px;
+            background-color: #1abc9c;
+        }
+    </style>
+    </head>
+    <body>
+         <div class="navbar">
+            <div>LOGO</div>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+      </div>
+        <div class="a">
+            Resize the browser window to see the responsive effect.
+        </div>
+        <div class="header">
+            <h1>My Website</h1>
+            <h3>With a flexible layout.</h3>
+
+        </div>
+       
+      <div class="row">
+        <div class="side" >
+            <h1>About me</h1>
+            <h3>Photo of me:</h3>
+            <div >
+                <img src="1.jpg" style="display:block;height: 300px;width:90%;">
+            </div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+
+        <div class="mainContent">
+            <h2>TITLE HEADING</h2>
+             <h5>Title description, Sep 2, 2017</h5>
+             <img src="1.jpg" style="display:block;height: 300px;width:100%;">
+             <p>Some text..</p>
+             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+             <h1>TITLE HEADING</h1>
+             <p><b>Title description, Sep 2, 2017</b></p>
+               <img src="1.jpg" style="display:block;height: 300px;width:100%;">
+             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    </div>
+    <div class="footer">
+                    copyright since 2016 - 2021
+    </div>
+    </body>
+    <script></script>
+    </html>
+

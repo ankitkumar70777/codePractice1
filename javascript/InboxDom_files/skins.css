@@ -1,0 +1,59 @@
+#settings-sections .changepassword a {
+    background-position: 6px -1795px;
+}
+
+.xelastic .listing.iconized .listitem.changepassword > a::before {
+    content: "\EB84";
+    font-family: IconFont !important;
+}
+
+.xelastic.xicons-outlined .listing.iconized .listitem.changepassword > a::before {
+    content: "\EC4C";
+    font-family: IconFont !important;
+    font-weight: normal;
+}
+
+#settings-sections .cidentities-link a {
+    background-position: 6px -1628px;
+}
+
+.xelastic .listing.iconized .listitem.cidentities-link > a::before {
+    content: "\ED36";
+    font-family: IconFont !important;
+}
+
+.xelastic.xicons-outlined .listing.iconized .listitem.cidentities-link > a::before {
+    content: "\EC6E";
+    font-family: IconFont !important;
+    font-weight: normal;
+}
+
+#settings-sections .imapsync a {
+    background-position: 6px -285px;
+}
+
+.xelastic .listing.iconized .listitem.imapsync > a::before {
+    content: "\ECE9";
+    font-family: IconFont !important;
+}
+
+.xelastic.xicons-outlined .listing.iconized .listitem.imapsync > a::before {
+    content: "\EC21";
+    font-family: IconFont !important;
+    font-weight: normal;
+}
+
+body.xelastic #plugin-ident_switch-account {
+    width: 100%;
+    padding-left: 0.375rem !important;
+    background: transparent !important;
+}
+
+#plugin-ident_switch-account:focus, 
+#plugin-ident_switch-account:hover, 
+#plugin-ident_switch-account::selection,
+#plugin-ident_switch-account:active {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

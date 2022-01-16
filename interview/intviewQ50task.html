@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content=" " />
+    <meta name="description" content="" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="author" content="ankit" />
+    <meta name="http-equiv" content="IE-Edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" href="media/images/1.ico" type="image/jpg" />
+    <link rel="stylesheet" type="text/css" href="" />
+    <script type="text/javascript" src=""></script>
+    <!-- <base href="media/" target="_blank"> -->
+    <style type="text/css"></style>
+  </head>
+  <body></body>
+  <script>
+    
+
+    // [12:00 PM, 5/25/2021] ankitkumar: 1. Find out duplicate elements from an array.
+    // 2. Write a program to add, delete,update array elements.
+    // 3. Check whether number given is Armstrong or not
+    // 4. Reverse an array
+    // 5.to find factorial of a number using recursion.
+    // 6. Number is negative or positive
+    // 8.print all prime no.
+    // 10. display multiplication
+    // 11 find the second element in array in case element with same value .
+    // 12 WAP to implement Fibonacci series
+    // 13. JavaScript Program to Make a Simple Calculator
+    // 14. JavaScript Program to Find the Sum of Natural Numbers
+    // 15. JavaScript Program to Find LCM
+    // 16. Find sum of all elements of array without using any loop.
+    // 17. Compare 2 array of the same size?
+    // 18.sort an array
+    // 19. Find missing no. Between 1to 10
+    // 20. Find largest and smallest no In an unsorted array
+    // 21. *
+    //       * *
+    //       * * *
+    //       * * * *
+    //       * * * * * Using loop concept.
+    // 22. Find the maximum and minimum of 10 numbers
+    // 23. Calculate area & circumference of circle for five different values of radius.
+    // 24. To check a character is alphabet or not.
+    // 25. To check whether a year is a leap year.
+    // 26. Convert the array into string with separator '/'.
+    // 27. write a program for print array's value with for in loop
+    // 28.Check whether a number is palindrome or not
+    // 29.print square of number.
+    // 30.Write code to convert an array of strings to an array of the lengths of those strings.
+    // 31.Write a function that converts hours into seconds.
+    // 32.Create a function that takes the age in years and returns the age in days.
+    // 33. write a program to find odd and even number in 1 to 100.
+    // 34.Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+    // 35. Wap to print numbers from 1to 100 and for  multiple of 3 print "fizz" , multiple of 5 print "buzz" and  print fizzbuzz for a number which is multiple of 3 as well as 5
+    // 36. Wap to get the length of a javascript object.
+    // 37.Wap to generate a random number
+    // 38.How to convert an Array [] to Object {} in JavaScript?
+    // 39.Write a JavaScript conditional statement to find the sign of product of three numbers?
+    // 40.Write a JavaScript program to sort a list of elements using Quick sort?
+    // 41. Write a JavaScript program to get a random element from an array.
+    // 42.Write a JavaScript program to get the width and height of the window
+    // 43.Write a JavaScript program to hash the input string into a whole number.
+    // 44.write a javascript program to replace characters of a string.
+    // 45.JavaScript Program to Calculate the Area of a Triangle.
+    // 46.JavaScript Program to Create Two Dimensional Array.
+    // 47.Javascript Program to Solve Quadratic Equation.
+    // 48. Write a js program to find sub,mul,div of 5 numbers and print them
+    // 49. use any 5 functions and make a program of it individually.
+    // 50. from given string extract any numeric value from it and store into an array
+    // 51.Write a javascript program to calculate the volume of a sphere.
+    // 52.Write a javascript program to get the nth element of the given array.
+    // 53. Wap to check whether an input is string or not
+    // 54.Wap to split a string and convert it into an array of words.
+    // 55.Wap to extraction  a specified number of characters from a string.
+    // 56.  Wap  to convert ASCII to Hexadecimal  format and vice versa.
+
+
+    
+
+    //1. Find out duplicate elements from an array.
+    //    var array1 = [12,1,12,7,4,14,15,16,8,7,4,1];
+    //    var duplicateValues = [];
+    //    var arrayLength = array1.length;
+    //    console.log('arrayLength',arrayLength);
+    //    console.log('array1',array1);
+    //    console.log('duplicateValues',duplicateValues);
+    //    for(var i=0;i<arrayLength;i++){
+    //        for(var j=i+1;j<arrayLength;j++){
+    //            if (array1[i]==array1[j]){
+    //                duplicateValues.push(array1[i]);
+    //            }
+    //        }
+    //    }
+    // console.log('duplicateValues',duplicateValues);
+
+    //1. Find out duplicate elements from an array.
+    //best solution is to sort array first and the check value of currunt
+    //element and next element
+    // let data = ['a','v','d','a','q','j','v'];
+    // let dataSorted = data.sort();
+    // console.log('dataSorted',dataSorted);
+    // console.log(dataSorted[1+1]);
+    // var unique = dataSorted.filter((v, i, a) => a[i+1] == v);
+    // console.log('unique',unique);
+
+    //2) Write a program to add, delete,update array elements.
+    // var array1 = [12,1,12,7,4,14,15,16,8,7,4,1];
+    // console.log(array1);
+    // array1.push('ankit');
+    // array1.pop();
+    // array1[0] = 'anil';
+    // console.log(array1);
+
+    //3. Check whether number given is Armstrong or not
+    //Armstrong number is a number that is equal to the sum of cubes of its digits. For example 0, 1, 153, 370, 371 and 407 are the Armstrong numbers.
+    //ex : 153 = (1*1*1)+(5*5*5)+(3*3*3)
+    // where:
+    // (1*1*1)=1
+    // (5*5*5)=125
+    // (3*3*3)=27
+    // So:
+    // 1+125+27=153
+
+    // var armstrongNo1 = '153';
+    // var armstrongNo1Splic = armstrongNo1.split('');
+    // console.log('armstrongNo1Splic',armstrongNo1Splic);
+    // var armstrongNo1SplicEleCount =  armstrongNo1Splic.length;
+    // console.log('armstrongNo1SplicEleCount',armstrongNo1SplicEleCount);
+    // var armstrongNo1SplicMul =  armstrongNo1Splic.map((val)=>(Math.pow(val,armstrongNo1SplicEleCount)));
+    // console.log('armstrongNo1SplicMul',armstrongNo1SplicMul);
+    // var armstrongNo1SplicMulReduced = armstrongNo1SplicMul.reduce((total,value)=>{return (total+value)});
+    //  console.log('armstrongNo1SplicMulReduced',armstrongNo1SplicMulReduced);
+    //  var armstrongNo1SplicMulReducedString =  armstrongNo1SplicMulReduced.toString();
+    //  console.log('armstrongNo1SplicMulReducedString',armstrongNo1SplicMulReducedString);
+    //  if (armstrongNo1 == armstrongNo1SplicMulReducedString){
+    //     console.log(`${armstrongNo1} is armstrong number`);
+    //  }else{
+    //     console.log(`${armstrongNo1} is not armstrong number`);
+    //  }
+
+    //4) Reverse an array
+    //usin reverse method()
+    //   var array1 = [12,1,5,3,7,9,523,123];
+    //  var array2 = array1.map((val)=>{return val });
+    // array2.reverse()
+    // console.log('array1 c',array1);
+    // console.log('array2',array2);
+
+    //5) to find factorial of a number using recursion
+    // let x = 4;
+    // function factorial1(x){
+    // let product = 1;
+    // for (let i = 1;i<=x;i++){
+    //     product = product * i
+    //     console.log(product);
+    //   }
+    //   return product;
+    // }
+    // finalProduct = factorial1(x);
+    // console.log('finalProduct',finalProduct);
+
+    // 6)Number is negative or positive
+    // let x = -4;
+    // function negativeOrPositive(x){
+    //   if (x<0){
+    //     console.log(`${x} is negative`);
+    //   }else{
+    //     console.log(`${x} is positive`);
+    //   }
+    //   return;
+    // }
+    // negativeOrPositive(x);
+
+    //8) print all prime no.
+    //best solution
+    // function checkPrime(x) {
+    //   if (x == 1) {
+    //     console.log(`${x} is ither a prime number not composote`);
+    //   } else if (x == 2 || x == 3 || x == 5 || x == 7) {
+    //     console.log(`${x} is a prime number 1`);
+    //   } else if (x % 2 == 0 || x % 3 == 0 || x % 5 == 0 || x % 7 == 0) {
+    //     console.log(`${x} is  not  prime number`);
+    //   } else {
+    //     console.log(`${x} is  prime number 2`);
+    //   }
+    // }
+
+    // primaNumbers1 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,12,15,18,100];
+    // primaNumbers1.forEach(checkPrime);
+    //checkPrime(x);
+
+    //or
+    //bad solution
+    // function checkPrime2(x){
+    //   if(x==1){
+    //     console.log(`${x} is ither a prime number not composote`);
+    //   }else if(x>2){
+    //       for(i=2; i<x; i++){
+    //         if( x % 2 == 0 ){
+    //           console.log(x,i);
+    //           console.log(`${x} is not a prime number`);
+    //         }else{
+    //           console.log(`${x} is  prime number`);
+    //         }
+    //       }
+    //   }
+    // }
+    //   primaNumbers2 = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,12,15,18,100];
+    //  primaNumbers2.forEach(checkPrime2);
+
+    //10) display multiplication table
+    // function displayMultiplicationTable (x){
+    //     for (let i = 0; i <= x; i++){
+    //         console.log(`${x}   *  ${i} =  ${x*i}`);
+    //     }
+    // }
+    // displayMultiplicationTable(12);
+
+    //11) find the second element in array in case element with same value .
+
+    //not undrtabd
+
+    //12) WAP to implement Fibonacci series
+
+  //   var a = 1, b = 1,d=0;
+  // var c = a + b;
+
+// function febo(a,b,c,d){
+//   console.log(a,b,c,d);
+//   b = a ;
+//   a = c;
+//   c = a+b;
+//   console.log('c',c,'d',d);
+//   while(d < 50){
+//     d++;
+//     console.log('d',d);
+//     febo(a,b,c,d);
+//   }
+// }
+// febo(a,b,c,d);
+
+
+//13  JavaScript Program to Make a Simple Calculator
+
+// function calc(x,y){
+//     console.log('add',x+y);
+//     console.log('sub',x-y);
+//     console.log('mul',x*y);
+//     console.log('dlt',x/y);
+// }
+// calc(x,y)
+
+
+
+    // 14. JavaScript Program to Find the Sum of Natural Numbers
+    //formula to clculate natural number  n * (n + 1) / 2
+    // function calcNaturalNum(x){
+    //   //by formula 
+    //     //console.log('sumOfnaturalnum : ', ((x * (x+1))/2));
+
+    //     //by using for loop
+    //     // let y = 1;
+    //     // for(i=1; i<=x; i++){
+    //     //   y = y+i;
+    //     // }
+    //     // console.log('y',y);
+    // }
+    //calcNaturalNum(4);
+
+    
+    // 15. JavaScript Program to Find LCM
+
+    // 16. Find sum of all elements of array without using any loop.
+    // 17. Compare 2 array of the same size?
+    // 18.sort an array
+    // 19. Find missing no. Between 1to 10
+    // 20. Find largest and smallest no In an unsorted array
+    // 21. *
+    //       * *
+    //       * * *
+    //       * * * *
+    //       * * * * * Using loop concept.
+    // 22. Find the maximum and minimum of 10 numbers
+    // 23. Calculate area & circumference of circle for five different values of radius.
+    // 24. To check a character is alphabet or not.
+    // 25. To check whether a year is a leap year.
+    // 26. Convert the array into string with separator '/'.
+    // 27. write a program for print array's value with for in loop
+    // 28.Check whether a number is palindrome or not
+    // 29.print square of number.
+    // 30.Write code to convert an array of strings to an array of the lengths of those strings.
+    // 31.Write a function that converts hours into seconds.
+    // 32.Create a function that takes the age in years and returns the age in days.
+    // 33. write a program to find odd and even number in 1 to 100.
+    // 34.Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen.
+    // 35. Wap to print numbers from 1to 100 and for  multiple of 3 print "fizz" , multiple of 5 print "buzz" and  print fizzbuzz for a number which is multiple of 3 as well as 5
+    // 36. Wap to get the length of a javascript object.
+    // 37.Wap to generate a random number
+    // 38.How to convert an Array [] to Object {} in JavaScript?
+    // 39.Write a JavaScript conditional statement to find the sign of product of three numbers?
+    // 40.Write a JavaScript program to sort a list of elements using Quick sort?
+    // 41. Write a JavaScript program to get a random element from an array.
+    // 42.Write a JavaScript program to get the width and height of the window
+    // 43.Write a JavaScript program to hash the input string into a whole number.
+    // 44.write a javascript program to replace characters of a string.
+    // 45.JavaScript Program to Calculate the Area of a Triangle.
+    // 46.JavaScript Program to Create Two Dimensional Array.
+    // 47.Javascript Program to Solve Quadratic Equation.
+    // 48. Write a js program to find sub,mul,div of 5 numbers and print them
+    // 49. use any 5 functions and make a program of it individually.
+    // 50. from given string extract any numeric value from it and store into an array
+    // 51.Write a javascript program to calculate the volume of a sphere.
+    // 52.Write a javascript program to get the nth element of the given array.
+    // 53. Wap to check whether an input is string or not
+    // 54.Wap to split a string and convert it into an array of words.
+    // 55.Wap to extraction  a specified number of characters from a string.
+    // 56.  Wap  to convert ASCII to Hexadecimal  format and vice versa.
+
+  </script>
+</html>

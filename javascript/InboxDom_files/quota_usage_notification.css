@@ -1,0 +1,51 @@
+
+.ui-dialog.quota_notification .ui-resizable-handle.ui-resizable-s::before,
+.ui-dialog.quota_notification .ui-resizable-handle.ui-resizable-s::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50px;
+    border-style: solid;
+    border-width: 12px;
+}
+
+.ui-dialog.quota_notification .ui-resizable-handle.ui-resizable-s::before {
+    border-color: #aaa transparent transparent transparent;
+    top: 2px;
+}
+
+.ui-dialog.quota_notification .ui-resizable-handle.ui-resizable-s::after {
+    border-color: #fff transparent transparent transparent;
+    top: 1px;
+}
+
+.ui-dialog.quota_notification {
+    overflow:visible;
+}
+
+.ui-dialog.quota_notification .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+
+/* Dialog close button color for gmail_plus theme  */
+body.skin-gmail_plus .ui-dialog.quota_notification .ui-dialog-titlebar-close::before {
+    color: #000;
+}
+@media screen and (max-width: 480px) {
+    /* Mobile styling  */
+    .ui-dialog.quota_notification {
+        height:auto !important;
+        width:80% !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        left:10% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .ui-dialog.quota_notification {
+        width:300px !important;
+        left:calc(50% - 150px) !important;
+    }
+}

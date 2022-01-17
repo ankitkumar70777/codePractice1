@@ -38,7 +38,7 @@
   color: blue;
 }
 
-.homeText > p {
+.homeTextP {
   font-size: 1.8rem;
 }
 
@@ -72,4 +72,52 @@
 .homeImage > img {
   width: 100%;
   height: 40rem;
+}
+
+.servicesCenter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.cardsServicesParent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.cardsServices {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30%;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid gray;
+  margin-top: 10px;
+}
+
+.cardsServices > h4 {
+  margin-top: 10px;
+}
+
+.cardsServices > img {
+  width: 100%;
+  height: 15rem;
+}
+
+.cardsServices > p {
+  margin-bottom: 0.5rem;
+}
+
+.cardsServices > button {
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+
+.contactHeading {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }

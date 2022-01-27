@@ -1,10 +1,11 @@
 import "./App.css";
 import React from "react";
-import MicromaxMain from "./component/projects/micromaxLandingPage/micromaxMain";
+import NavBar from "./components/navBar/navBar";
+
 function App() {
   return (
     <>
-      <MicromaxMain />
+      <NavBar />
     </>
   );
 }

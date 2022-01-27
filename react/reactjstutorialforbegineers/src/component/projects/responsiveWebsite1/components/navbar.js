@@ -12,7 +12,7 @@ function Navbar() {
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
               <NavLink className="navbar-brand navFontSize" to="/">
-                <strong>AWS</strong>
+                <strong>DevZone</strong>
               </NavLink>
 
               <div

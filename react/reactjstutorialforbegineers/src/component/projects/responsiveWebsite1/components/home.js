@@ -9,7 +9,7 @@ function Home() {
     <>
       <HomeAndAbout
         headline="Grow Your Business with "
-        productName="AWS"
+        productName="DevZone"
         paragraphLine="We are the team of highly taanted developer"
         navLinkBButtonText="Get Started"
         imageName={mern}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid red
+        }
+
+        .divSimple {
+            width: 80%;
+            height: 400px;
+            border: 1px solid red;
+            margin: auto;
+            text-align: center;
+        }
+
+        .mainHeading {
+            margin: 2rem auto 0;
+            border: 1px solid red;
+            width: 50%;
+            /* css have 5 property for pading : 
+            margin : 
+            margin-top:
+            margin-right:
+            margin-bottom:
+            margin-left:
+            
+            value: 
+            -length: 
+            -%:
+            inherit
+            */
+            padding: 2% 3%;
+        }
+
+        .secondHeading {
+            /* the css width property set width of element's content area
+            content are is are of content execpt margin,padding,border
+            if element has specifc width and padding added to that element will added in 
+            total width of element */
+            width: 400px;
+            margin: 10px auto;
+            padding: 20px;
+            /* so if you want to set width of element as you specified in width property no matter
+            what paddind is added add box-sizing :border-box this will keep otal width of element 
+            as you set in width property no matter what padding is */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="divSimple">
+        <h1 class="mainHeading">Main Heading</h1>
+
+        <h2 class="secondHeading">Second Heading</h2>
+    </div>
+</body>
+
+</html>

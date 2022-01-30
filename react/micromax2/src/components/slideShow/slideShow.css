@@ -1,0 +1,28 @@
+.slideShowImages{
+    height: 500px;
+}
+
+.slideShowImages > img {
+    height: 100%;
+    width: 100%;
+}
+
+.leftArrow{
+    border: 1px solid red;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top : 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightArrow{
+    border: 1px solid red;
+    background-color: black;
+}

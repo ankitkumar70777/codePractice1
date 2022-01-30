@@ -1,0 +1,119 @@
+<!-- html heading -->
+
+<!-- html heading is used by search engine to detect structure of web page
+dont use it to display text bigger -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content=" " />
+    <meta name="description" content="" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <meta name="author" content="ankit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/jpg" />
+    <!-- <base href="media/" target="_blank"> -->
+    <link rel="stylesheet" type="text/css" href="" />
+    <style type="text/css">
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+      /* tr:nth-child(odd){
+        background-color:beige;
+      } */
+      td:nth-child(even),
+      td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th>name</th>
+          <th>age</th>
+          <th>contact</th>
+          <th>location</th>
+        </tr>
+        <tr>
+          <td>ankitkumar</td>
+          <td>27</td>
+          <td>ankitkumar</td>
+          <td>ankitkumar</td>
+        </tr>
+        <tr>
+          <td>ankitkumar</td>
+          <td>27</td>
+          <td>ankitkumar</td>
+          <td>ankitkumar</td>
+        </tr>
+        <tr>
+          <td>ankitkumar</td>
+          <td>27</td>
+          <td>ankitkumar</td>
+          <td>ankitkumar</td>
+        </tr>
+        <tr>
+          <td>ankitkumar</td>
+          <td>27</td>
+          <td>ankitkumar</td>
+          <td>ankitkumar</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- HTML Block and Inline Elements -->
+    <!-- <div style="height: 300px;width: 70%;border:1px solid red;margin: 0 auto 0 auto;">
+      <img src="../media/12.jpg" style="max-width: 100%; height: 100%;" />
+    </div>
+
+    <h1 style="font-size:1.5rem">hello world</h1> -->
+    <br /><br /><br />
+    <form  id="form1">
+      <label for="fname">name</label>
+      <input type="text" id="fname" name="fname" value="" />
+      <br />
+      <label for="gender" id="gender"> Gender</label><br />
+      <label> male <input type="radio" name="gender" value="male" /></label
+      ><br />
+      <label> female <input type="radio" name="gender" value="female" /></label
+      ><br />
+      <label> other <input type="radio" name="gender" value="other" /></label
+      ><br />
+      <button type="submit">submit</button>
+    </form>
+
+    <script>
+      // function displayVal(e) {
+      //   console.log({ e });
+      //   e.preventDefault();
+      //   console.log(e.target.value);
+      //   console.log("hi");
+      // }
+
+
+      document.getElementById("form1").onsubmit = ()=>{
+        console.log(document.getElementById("gender").value);
+        console.log(document.getElementById('fname').value);
+        return false;
+      }
+    </script>
+    <script type="text/javascript" src=""></script>
+  </body>
+</html>

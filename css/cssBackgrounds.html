@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .backgroundColor {
+            background-color: antiquewhite;
+            width: 70%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid tomato;
+            /* opacity define opacity or tranfaracy of an element */
+            /* when using opacity all its child element will inherits same tranfarancy, tis can marker
+            text hard to read; */
+            /* opacity: 60%; */
+            /* if you want to set opacity to only background use rgba property; */
+            /* last rgba element is opacity */
+            background-color: rgba(0, 128, 0, 0.6);
+        }
+
+        .backgroundImage {
+            /* when using background image alway mind that background image does not distrube text  */
+            background-image: url("./media/images/1.png");
+            width: 70%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .backgroundRepeat {
+            background-image: url("./media/images/twitter-small-icon-17.jpeg");
+            background-repeat: round;
+            /* repeat-x,repat-y,norepeat,round,space */
+            width: 70%;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid tomato;
+        }
+
+        .backgroundPosition {
+            background-image: url("./media/images/twitter-small-icon-17.jpeg");
+            background-repeat: no-repeat;
+            /* top left right top */
+            background-position: top left;
+            width: 70%;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid tomato;
+        }
+
+        .backgroundAttachment {
+            background-image: url("./media/images/twitter-small-icon-17.jpeg");
+            background-repeat: no-repeat;
+            /* top left right top */
+            background-position: top right;
+            /* scroll,fixed,local */
+            background-attachment: local;
+            width: 70%;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid tomato;
+            overflow: scroll;
+        }
+
+        .backgroundShorthand {
+            width: 70%;
+            height: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid tomato;
+
+            /* When using the shorthand property the order of the property values is:
+        background-color
+        background-image
+        background-repeat
+        background-attachment
+        background-position */
+            /* background-size: auto; */
+
+            background: url("./media/images/twitter-small-icon-17.jpeg") no-repeat local bottom left;
+            /* background-size: 500px 600px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h3> background color</h3>
+    <div class="backgroundColor">
+        <h2>Name Of King: </h2>
+    </div>
+
+    <h3>background image</h3>
+    <div class="backgroundImage">
+    </div>
+
+    <h3>background repeat</h3>
+    <div class="backgroundRepeat">
+    </div>
+
+
+    <h3>background position</h3>
+    <div class="backgroundPosition">
+    </div>
+
+
+    <h3>background attachment</h3>
+    <div class="backgroundAttachment">
+        <h1>Natural Destaer</h1>
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla </p>
+        <h1>Natural Destaer</h1>
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla </p>
+        <h1>Natural Destaer</h1>
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla </p>
+
+        <h1>Natural Destaer</h1>
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla </p>
+        <h1>Natural Destaer</h1>
+        <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla </p>
+    </div>
+
+
+
+
+    <h3>background showrthand</h3>
+    <div class="backgroundShorthand">
+    </div>
+
+
+</body>
+
+</html>

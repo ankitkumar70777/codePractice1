@@ -1,0 +1,32 @@
+// veriabls : are the way to store property or info and use it as many time
+// what can be store in veriabls : string, number, color, boolean, list, null 
+
+// !global  can overright veriable value
+
+$color: red;
+$border : 1px solid black;
+$width : 50%;
+
+h1{
+    color:$color;
+    background-color: antiquewhite;
+    border: $border;
+    width: $width;
+}
+
+h2{
+    //this is now we can overright veriable property
+    $color : green ;
+    color: $color;
+}
+
+h3{
+    // to globally overright color use !global
+    $color : brown !global ;
+    color: $color;
+}
+
+h4{
+    //due to globally overright color veriable is now brown
+    color: $color;
+}

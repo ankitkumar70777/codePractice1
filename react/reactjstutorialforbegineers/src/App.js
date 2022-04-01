@@ -1,10 +1,13 @@
 import "./App.css";
 import React from "react";
-import MicromaxMain from "./component/projects/micromaxLandingPage/micromaxMain";
+import GrandParent from "./component/reactRender/reactRender3_useState/14RenderContext/grandParent";
+
 function App() {
   return (
     <>
-      <MicromaxMain />
+      {/* <React.StrictMode> */}
+      <GrandParent />
+      {/* </React.StrictMode> */}
     </>
   );
 }

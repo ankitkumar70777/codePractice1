@@ -1,0 +1,14 @@
+* {
+  border: 1px solid rgb(250, 5, 5);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #555555;
+}
+
+.navBarMoneyControlWebinar {
+  margin-top: 15px;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

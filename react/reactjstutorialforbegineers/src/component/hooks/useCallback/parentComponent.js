@@ -27,7 +27,7 @@ export default function ParentComponentUseCallBack() {
     </div>
   );
 }
-//react.memo is heigher order component that will prenent functional
+//react.memo is heigher order component that will prevent functional
 //compnent to being re-render if its props or state do not change
 //memo is react feature
 //function as prop may b re-render again because function is always diff

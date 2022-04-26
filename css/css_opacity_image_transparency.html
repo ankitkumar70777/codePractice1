@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+        }
+        .div {
+            border: 2px solid green;
+            width: 60%;
+            height: 500px;
+            margin: auto auto;
+        }
+
+        .outerDiv{
+            border:1px solid red;
+            width:80%;
+            height: 150px;
+            margin: 10px auto ;
+            background: url("./media/images/1.png") no-repeat local;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .outerDiv>h2{
+/* border:1px solid red; */
+width: 70%;
+margin:  auto;
+padding: 30px;
+/* opacity: 0.2; setting opacity will blur text iside it to blur and other element
+so best solution is to set opacty throught rgba
+*/
+background-color: rgba(53, 54, 53, 0.3);
+color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="outerDiv">
+            <h2>
+                this is some text
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>

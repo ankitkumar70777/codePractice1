@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            border: 1px solid red;
+
+        }
+
+        .centerBox {
+            width: 80%;
+            height: 500px;
+            margin: auto auto;
+            background-color: antiquewhite;
+        }
+
+        .mainHeader>h1 {
+            /* block element will expand to both right left as much as it can */
+            /* display properties block, none, inline */
+            /* this make h1 to inline element as h1 is block element */
+            display: inline;
+            border: 2px solid green;
+        }
+
+        .mainHeader>p>span {
+            border: 2px solid brown;
+            /* this made span which is inline element to block element  */
+            /* display: block; */
+            display: inline;
+            /* big diff bet display:none and visibility: hidden is
+            visibility: hidden will hide element but the space taken by element will be as it was
+            in display:none eleenent completely vanishes
+            */
+            visibility: hidden;
+        }
+
+
+        .centerBox>h3 {
+            padding: 5px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .centerBox>p {
+            padding: 5px 10px;
+            text-align: justify;
+            margin-top: 0;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centerBox">
+        <div class="mainHeader">
+            <h1>The One Thing:</h1>
+            <p>this book is amzing <span>span element</span>this bllok is amazing</p>
+        </div>
+
+        <h3 onclick="displayP()">Click to show panel</h3>
+        <p id="panelText">
+            This panel contains a div element, which is hidden by default (display: none).
+
+            It is styled with CSS and we use JavaScript to show it (display: block).
+
+            How it works: Notice that the p element with class="flip" has an onclick attribute attached to it. When the
+            user clicks on the p element, a function called myFunction() is executed, which changes the style of the div
+            with id="panel" from display:none (hidden) to display:block (visible).
+
+            You will learn more about JavaScript in our JavaScript Tutorial.
+        </p>
+
+    </div>
+    <script>
+        function displayP() {
+            document.getElementById("panelText").style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

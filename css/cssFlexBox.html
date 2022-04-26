@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+        }
+
+        /* flex-container : ---------- */
+        /* dislplay: flex
+        flex-direction: row/row-reverse/column/column-reverse
+        flex-wrap: wrap/nowrap/wrap-reverse
+        flex-flow : = flex-direction flex-wrap
+        justify-content : center/flex-start/flex-end/space-around/space-between/space-evenly
+        align-items : center/flex-start/flex-end/stretch/baseline
+        align-content: space-around/space-between/space-evenly/stratch/center/flex-start/flex-end
+
+
+
+        The flex item properties are:
+
+            order : The order property specifies the order of the flex items.
+            
+            ex: <div style="order:3"></div>
+                                    
+                                
+            flex-grow : how much item will grow relative to others
+            <div style="order:2;flex-grow: 1;"></div>
+            <div style="order:2;flex-grow: 2;"></div>
+            <div style="order:2;flex-grow: 3;"></div>
+
+
+            flex-shrink: how much itm shrink relative to other
+                    <div style="order:3;flex-shrink: 2">
+                    <p>1</p>
+                    </div> 
+            
+            flex-basis : initial lenagth of flex item
+            <div style="flex-basis: 200px">3</div>
+
+
+            flex : is shorthand of flex-grow, flex-shrink, and flex-basis 
+            ex: <div style="flex: 0 0 200px">3</div>
+
+
+            align-self : flex-start,flex-end,center
+
+
+        */
+
+        /* .flexBox {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            height: 300px;
+            align-items: stretch;
+            align-content: space-around;
+        } */
+
+        /* .flexBox>div {
+            width: 100px;
+            height: 100px;
+            display: flex; 
+            justify-content: center;
+             align-items: center; 
+        }
+
+
+        .flexBox>div>p {
+            text-align: center;
+        } */
+
+
+        .navBar1{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                width: 90%;
+                
+                margin: 10px auto;
+                text-align: center;
+                
+                /* border:1px solid red; */
+        }
+
+        .logo>a, .menus>a{
+            padding: 5px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: black;
+            text-decoration: none;
+            border:1px solid LightGray;
+            text-underline-position: under
+        }
+
+        .logo>a:hover, .menus>a:hover{
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness:2px;
+            padding-bottom: 5px;
+            text-underline-position: under
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .navBar1 {
+                flex-direction: column;
+                
+            }
+            .logo>a, .menus>a{
+                
+                display: block;
+            }
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="flexBox">
+        <div></div>
+    </div> -->
+
+<!-- responsive navbar -->
+
+
+<div class="navBar1">
+    <div class="logo"><a href="#">logo</a></div>
+    <div class="menus">
+        <a href="#">career</a>
+        <a href="#">products</a>
+        <a href="#">test</a>
+        <a href="#">test2</a>
+    </div>
+</div>
+
+</body>
+
+</html>

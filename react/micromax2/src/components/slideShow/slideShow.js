@@ -1,24 +1,42 @@
 import React, { useState } from "react";
 import "./slideShow.css";
-import airfunk1 from "../../media/images/slideShowImages/1.png";
-import airfunk2 from "../../media/images/slideShowImages/2.png";
-import noHangPhone from "../../media/images/slideShowImages/3.png";
-import inNote2 from "../../media/images/slideShowImages/4.png";
 import leftArrow from "../../media/images/slideShowImages/left-arrow.png";
 import rightArrow from "../../media/images/slideShowImages/right-arrow.png";
+import slideShowDataArr from "./slideShowData";
 
 function SlideShow() {
-  const [slideImage, setSlideImage] = useState(airfunk1);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const lengthOfSlideShowData = slideShowDataArr.length;
+
+  // console.log({ currentSlide });
+  // console.log({ lengthOfSlideShowData });
+
+  const loadPreviousImage = () => {
+    setCurrentSlide(
+      currentSlide === 0 ? lengthOfSlideShowData - 1 : currentSlide - 1
+    );
+  };
+  const loadNextImage = () => {
+    setCurrentSlide(
+      currentSlide === lengthOfSlideShowData - 1 ? 0 : currentSlide + 1
+    );
+  };
+
   return (
     <div>
       <div className="slideShowImages">
-        <img src={slideImage} alt="airFunk1" />
-        <a>
-          <img src={leftArrow} alt="leftArrow" className="leftArrow" />
-          <img src={rightArrow} alt="rightArrow" className="rightArrow" />
+        {slideShowDataArr.map((v, i) => {
+          return i === currentSlide && <img src={v.src} alt="airFunk1" />;
+        })}
+
+        <a className="leftArrow" onClick={loadPreviousImage}>
+          <img src={leftArrow} alt="leftArrow" />
+        </a>
+
+        <a className="rightArrow" onClick={loadNextImage}>
+          <img src={rightArrow} alt="rightArrow" />
         </a>
       </div>
-      <div>indicator</div>
     </div>
   );
 }

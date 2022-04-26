@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border: 2px solid green;
+            width: 60%;
+            height: auto;
+            margin: auto auto;
+        }
+
+        /* :link use to select unvisited link, visited: use to select visited link */
+        /* .ancherPseudoClass:link,
+        .ancherPseudoClass:visited {
+            color: red
+        } */
+
+        /* :hover: used to slect element whic are hovered */
+        /* .ancherPseudoClass:hover {
+            color: rgb(40, 209, 7)
+        } */
+
+        /* ancher active/clicked currently */
+        /* .ancherPseudoClass:active {
+            color: rgb(43, 8, 243)
+        } */
+
+        /* select every disabeed element */
+        /* input:disabled {
+            border: 2px solid rgb(196, 8, 8);
+            background-color: rgb(80, 83, 80);
+        } */
+
+        /* select all enabled color */
+        /* input:enabled {
+            border: 2px solid rgb(196, 8, 8);
+            background-color: rgb(2, 105, 2);
+            color: white
+        } */
+
+        /* select empty elements, this dont work on empty elements
+        :empty searched for empty conatainer contener but input is always empty container
+        white space is not empty <p> (space) </p>
+        having empty children is not empty <p><span></span></p>
+        */
+        /* p:empty {
+            background-color: rgb(80, 83, 80);
+            border: 3px solid red
+        } */
+
+
+
+        /* first child of p in .child class */
+        /* .childs>p:first-child {
+            background-color: red;
+            color: wheat
+        } */
+
+        /* last child of p in .child class */
+        /* .childs>p:last-child {
+            background-color: rgb(10, 9, 9);
+            color: wheat
+        } */
+
+        /* select first of type a tag in all tag */
+        /* .childs>a:first-of-type {
+            background-color: aqua;
+        } */
+
+        /* select last of type a tag in all tag */
+        /* .childs>a:last-of-type {
+            background-color: rgb(243, 45, 184);
+        } */
+
+        /* select element which is on focus */
+        /* .focus input:focus {
+            background-color: rgb(81, 63, 236);
+        } */
+
+        /* select element which is in range  */
+        /* .selectFileComp:in-range {
+            background-color: aqua;
+            border: 4px solid red;
+        } */
+
+        /* select all invalid input */
+        /* #voterForm:invalid {
+            border: 3px solid red
+        } */
+
+        /* :lang("en-us") sleect all emlemet with lang attribute with en us text */
+
+
+
+        /* .noooo p:not(.hahaha) {
+            background-color: aqua;
+        } */
+
+        /* nth-child(2) select 2nd element  */
+        /* .nthChild p:nth-child(2){
+            background-color: aqua;
+        } */
+
+        /* nth-last-child(2) select 2nd last child element  */
+        /* .nthChild p:nth-last-child(2){
+            background-color: aqua;
+        } */
+
+/* 
+        :nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent */
+
+    /* :optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all <input> elements with a valid value
+:visited	a:visited	Selects all visited links */
+
+
+/* Selector	Example	Example description
+::after	p::after	Insert content after every <p> element
+::before	p::before	Insert content before every <p> element
+::first-letter	p::first-letter	Selects the first letter of every <p> element
+::first-line	p::first-line	Selects the first line of every <p> element
+::selection	p::selection	Selects the portion of an element that is selected by a user */
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <a class="ancherPseudoClass">
+            click me
+        </a>
+        <form class="form">
+            <label for="fname">input name</label>
+            <input type="text" id="fname" name="fname" value="" placeholder="disabled" disabled />
+            <input type="text" id="lname" name="fname" value="fdsfsdf" placeholder="active" />
+            <p>hi how r u</p>
+            <p></p>
+        </form>
+
+
+        <div class="childs">
+            <p class="childP">11111</p>
+            <a>click here to enter</a>
+            <a>click here to out</a>
+            <div>
+                <p>22222222</p>
+            </div>
+            <p>33333333333</p>
+        </div>
+
+        <div class="focus">
+            <input type="text" name="fname" value="" />
+        </div>
+
+        <input class="selectFileComp" type="number" min="10" max="20" name="fileComp" value="13" />
+        <br /><br /><br />
+        <form id="voterForm">
+            <input type="text" name="fname" />
+            <input type="number" name="age" min="18" max="67" />
+        </form>
+
+        <div class="noooo">
+            <p>ankitkumar</p>
+            <p>ravidas</p>
+            <p>rameshcnadra</p>
+            <p class="hahaha">hahaha</p>
+        </div>
+
+
+        <div class="nthChild">
+            <p>ankitkumar</p>
+            <p>ravidas</p>
+            <p>rameshcnadra</p>
+            <p >hahaha</p>
+            <p >hahaha</p>
+            <p >hahaha</p>
+            <p >hahaha</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

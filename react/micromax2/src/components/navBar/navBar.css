@@ -1,5 +1,4 @@
-* {
-}
+
 
 .navBar {
   margin: 10px 5% 10px 5%;
@@ -43,11 +42,10 @@
 .navItems > a:hover {
   color: chocolate;
   text-decoration: underline;
+  text-underline-position: under;
 }
 
-.navLogo {
-  /* border: 1px solid red; */
-}
+
 
 .navLogo > img {
   height: 100%;

@@ -1,0 +1,54 @@
+*{
+    /* border: 1px solid red; */
+}
+
+
+ 
+ 
+
+.smartPhoneHeading{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.smartPhoneHeading > h2{
+font-weight: 700;
+color: #231f20;
+font-size: 30px;
+
+}
+
+.smartPhoneBody{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+ .smartPhonesIcon {
+    text-align: center;
+    font-size: 3rem;
+    width:100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.smartPhoneBody >.smartPhonesSlider{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: auto;
+    animation:  0.5s;
+}
+
+.simpleSmartPhone{
+    width:250px;
+}
+
+.simpleSmartPhone img{
+    width:50%;
+}
+

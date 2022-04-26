@@ -1,0 +1,17 @@
+.container{
+    width:400px;
+    border:1px solid red;
+    height:500px;
+    margin:20px auto
+}
+
+.container h1{
+
+}
+
+.container p img{
+    width:70px;
+    height:70px;
+    border:1px solid red;
+    border-radius:200px;
+}

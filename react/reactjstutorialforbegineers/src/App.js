@@ -1,13 +1,14 @@
 import "./App.css";
 import React from "react";
-import GrandParent from "./component/reactRender/reactRender3_useState/14RenderContext/grandParent";
+import TodoContainer from "./component/reduxTutorial/components/todoContainer";
 
 function App() {
   return (
     <>
-      {/* <React.StrictMode> */}
-      <GrandParent />
-      {/* </React.StrictMode> */}
+      <React.StrictMode>
+        <h1>Hello Team</h1>
+        <TodoContainer />
+      </React.StrictMode>
     </>
   );
 }

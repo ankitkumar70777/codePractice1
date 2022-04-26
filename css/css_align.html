@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border: 2px solid green;
+            width: 60%;
+            height: auto;
+            margin: auto auto;
+        }
+
+        .mainHeading {
+            /* center align  block element 
+            center aligining will not work if  width is 100% or no width
+            */
+            border: 1px solid red;
+            width: 30%;
+            height: auto;
+            margin: 10px auto 5px;
+        }
+
+        .imageCenter {
+            /* center image */
+            border: 1px solid red;
+            /* to center image, make image as block element and center it vie margin auto */
+            display: block;
+            width: 60%;
+            height: auto;
+            margin: auto auto;
+        }
+
+        .imageWithText {
+            border: 1px solid red
+        }
+
+        .imageWithText>img {
+            width: 30%;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .imageWithText>p {
+            display: inline;
+        }
+
+
+        .paraCenter {
+            /* center text inside element  */
+            padding: 30px;
+            text-align: center;
+        }
+
+        .usingFlexBox {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            border: 1px solid red;
+            padding: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <h1 class="mainHeading">The History</h1>
+        <img class="imageCenter" src="./media/images/1.png" />
+        <br>
+        <div class="imageWithText">
+            <img src="./media/images/1.png">
+            <p>
+                this image is good this image is good this image is good this image is good this image is good this
+                image is good this image is good this image is good this image is goodthis image is good this image is
+                good this image is good this image is good this image is goodthis image is good this image is good this
+                image is good this image is good this image is good this image is good this image is good this image is
+                good this image is good this image is good this image is good this image is good this image is good this
+                image is good this image is good this image is good this image is good this image is good this image is
+                good this image is good this image is good this image is good this image is good this image is good this
+                image is good this image is good this image is good this image is good this image is good this image is
+                good this image is good this image is good this image is good this image is good this image is good this
+                image is good this image is good this image is good
+            </p>
+        </div>
+
+
+
+        <p class="paraCenter">
+            i am yours
+        </p>
+
+
+        <div class="usingFlexBox">
+            <p>i am yours</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border: 2px solid green;
+            width: 60%;
+            height: 500px;
+            margin: auto auto;
+            background-color: aquamarine;
+        }
+        .imptext{
+            background-color: transparent;
+        }
+        .impTextHead{
+            color:rgb(70, 16, 36);
+            /* current color will select color property color */
+            border:2px solid currentColor;
+        }
+
+        .impText2{
+            
+            /* current color will inherit property formparent element */
+            border:inherit;   
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+            <p class="impText">Imp TExt</p>
+            <p class="impTextHead">Imp TExt 22</p>
+            <p class="impText2">impText2impText2impText2</p>
+    </div>
+</body>
+
+</html>

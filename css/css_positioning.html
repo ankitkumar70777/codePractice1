@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .div {
+            border: 2px solid green;
+            width: 60%;
+            height: 500px;
+            margin: auto auto;
+            overflow: scroll;
+        }
+
+        .static {
+            /* html element are positioned static by default
+            static posiitoon element are not affected by top,bottom,left,right
+            */
+            position: static;
+            border: 2px solid green;
+            width: 60%;
+            height: 60px;
+            margin: 5px auto;
+        }
+
+        .static>p {
+            border: 1px solid red;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            /* relative postion is imp to left right botton top work */
+            position: relative;
+            top: 50%;
+            bottom: 50;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .relative {
+            /* relative postion is imp to left right botton top work */
+            position: relative;
+            border: 1px solid red;
+            width: 20%;
+            left: 40%;
+            right: 40%;
+        }
+
+        .fixed {
+            /* position fieed is position relative to viewport 
+            it walys stays in same page even if we scroll 
+            position top,botton,right,left
+            */
+            position: fixed;
+            border: 1px solid red;
+            width: 150px;
+            right: 0;
+            bottom: 20px;
+            margin-right: 20px;
+        }
+
+
+        .absolute {
+            /* element with position absolute is relaive to its nearest parent element
+            if parent element is unavailable it uses document body
+            */
+            position: absolute;
+            border: 1px solid red;
+            width: 20%;
+            left: 40%;
+            right: 40%;
+        }
+
+
+        .sticky {
+
+            /* to work sticky you must provide top or its position to where to stick while scrilling */
+            position: sticky;
+            border: 1px solid red;
+            top: 5px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <!-- static -->
+        <div class="static">
+            <p>static</p>
+        </div>
+
+
+        <div class="relative">
+            relative
+        </div>
+
+        <div class="fixed">
+            fixed: click here to chat
+        </div>
+
+        <div class="absolute">
+            absolute
+        </div>
+        <br>
+
+        <div class="sticky">
+            sticky
+        </div>
+
+        <div>
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+
+            <h1>testse</h1>
+            <p>test test test test test test test test test test test test test test test test test test test test test
+                test
+                test test test test test test test test test test test test test test test test test </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,28 +1,53 @@
 .slideShowImages{
     height: 500px;
+    width: 100%;
+    position: relative;
+    
 }
 
 .slideShowImages > img {
     height: 100%;
     width: 100%;
+    
 }
 
 .leftArrow{
-    border: 1px solid red;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* border: 1px solid red; */
+    /* background-color: aqua; */
     position: absolute;
-    top : 0;
+    left:1%;
+    top:0;
     bottom: 0;
     z-index: 1;
+    width: 30px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.leftArrow:hover{
+    cursor: pointer;
 }
 
 .rightArrow{
-    border: 1px solid red;
-    background-color: black;
+    /* border: 1px solid red; */
+    /* background-color: aqua; */
+    position: absolute;
+    right:1%;
+    top:0;
+    bottom: 0;
+    z-index: 1;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.rightArrow:hover{
+    cursor: pointer;
 }

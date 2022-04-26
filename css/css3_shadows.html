@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            border: 2px solid green;
+            width: 80%;
+            height: 500px;
+            margin: auto auto;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap ;
+            justify-content: space-evenly;
+        }
+        .card{
+            width: 300px;
+            height: 200px;
+            border:1px solid #b8b4b4;
+            transition: width 10s, height 10s;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .card:hover{
+            border: 2px solid #333030;
+        }
+        
+        .card > img{
+            width:100%;
+            height:150px;
+        }
+        .card>p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div">
+            <div class="card">
+                <img src="./media/images/1.png" alt="card image" />
+                <p>Shadow</p>
+            </div>
+            <div class="card">
+                <img src="./media/images/1.png" alt="card image" />
+                <p>Shadow</p>
+            </div>
+            <div class="card">
+                <img src="./media/images/1.png" alt="card image" />
+                <p>Shadow</p>
+            </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 70%;
+            height: 300px;
+            background-color: aliceblue;
+            border: 1px solid red;
+            margin: auto auto;
+
+        }
+
+        .zindexxx {
+            color: red;
+            position: absolute;
+            top: 20px;
+            /* in -1 overlaping element will be in on down ,
+            in 1 overlaping element will be up
+            z-inde xonly work on positined element
+            if element are overlapping each other, the elemenet which is at last will be on top 
+            */
+            z-index: 1;
+            width: 60px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>ankitkumar</h1>
+        <img class="zindexxx" src="./media/images/1.png" />
+    </div>
+</body>
+
+</html>

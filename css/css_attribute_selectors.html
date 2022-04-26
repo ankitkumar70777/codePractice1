@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* used to select element which contain attribute */
+        a[target] {
+            background-color: yellow;
+        }
+
+/* select any all  tag with attribute "text1"  and value "heading" */
+        [text1="heading"]{
+            background-color: red;;
+        }
+
+        /* select attribute of p tag which name as text1 with val "mainHeading" */
+        p[text1="mainHeading"]{
+            background-color: aqua;
+        }
+
+        /* select all eleent of p which contain attribute name title with value name with space or 
+        only name ex:  "my name", "name"*/
+        p[title~="name"]{
+            font-weight: bold;
+        }
+
+
+        /* select all eleent of p which contain attribute name title  with first lettter
+        with value name with dash(-) or  only name
+         ex:  "first", "name"*/
+        [title|="first"]{
+            font-weight: bold;
+            background-color: palevioletred;
+        }
+
+
+        /* CSS [attribute^="value"] Selector:  value start wth specified value */
+        /* CSS [attribute$="value"] Selector: value end with specified value */
+        /* CSS [attribute*="value"] Selector: vlaue contain specified word anywhere */
+
+        /* 
+        [attribute]	[target]	Selects all elements with a target attribute
+[attribute=value]	[target=_blank]	Selects all elements with target="_blank"
+[attribute~=value]	[title~=flower]	Selects all elements with a title attribute containing the word "flower"
+[attribute|=value]	[lang|=en]	Selects all elements with a lang attribute value starting with "en"
+[attribute^=value]	a[href^="https"]	Selects every <a> element whose href attribute value begins with "https"
+[attribute$=value]	a[href$=".pdf"]	Selects every <a> element whose href attribute value ends with ".pdf"
+[attribute*=value]	a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools" */
+    </style>
+</head>
+<body>
+    
+
+
+    <a href="#">ankitkumar</a>
+    <a href="#" target="_blank">ravidas</a>
+    <p text1="heading">this is para</p>
+    <p text1="mainHeading">this is para</p>
+
+    <p title="my name">ankit</p>
+    <p title="name">ankit</p>
+    <p title="first-my-name">ankit</p>
+    <p title="first">ankit</p>
+</body>
+</html>

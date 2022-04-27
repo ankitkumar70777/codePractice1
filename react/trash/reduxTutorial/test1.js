@@ -1,22 +1,19 @@
 function main(N) {
+  var arr = [];
   var i = 1;
-  var flag = 0;
-
-  for (i; i * i <= N; i++) {
+  for (i; i < N; i++) {
     if (N % i == 0) {
-      if (i == N / i) {
-        flag++;
-      } else {
-        flag = flag + 2;
-      }
+      arr.push(i);
     }
   }
-  // console.log({ flag });
-  if (flag == 2) {
-    console.log("YES");
+  console.log(arr);
+  const sumOfArr = arr.reduce((t, v, i) => (t = t + v));
+  console.log({ sumOfArr });
+  if (sumOfArr == N) {
+    return "N is perfect number";
   } else {
-    console.log("NO");
+    return "N is perfect number";
   }
 }
 
-main(999563);
+main(28);

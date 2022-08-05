@@ -50,23 +50,82 @@
 // }
 // console.log(squreRoot(200));
 
+//this not understood
 //bindary method
-function squreRoot(A) {
-  let minimumHalfValFun = (input) => {
-    let tempVar = input;
-    if (input % 2 == 0) {
-      tempVar = tempVar / 2;
-    } else {
-      tempVar = (tempVar - 1) / 2;
-    }
-    if (tempVar**2 > A) {
-      minimumHalfValFun(tempVar);
-    }
-    console.log({ tempVar });
-  };
-  let minimumHalfVal = minimumHalfValFun(A);
-  console.log({ minimumHalfVal });
-  //   if (halfOfA < A) {
-  //   }
+// function squreRoot(N) {
+//   if (N == 0) {
+//     return 0;
+//   }
+//   let start = 1,
+//     end = N,
+//     ans;
+
+//   while (start <= end) {
+//     let mid = Math.trunc(start + (end - start) / 2);
+
+//     console.log({ mid });
+//     if (mid <= N / mid) {
+//       ans = mid;
+//       start = mid + 1;
+//       console.log({ start });
+//     } else {
+//       end = mid - 1;
+//       console.log({ end });
+//     }
+//   }
+//   return ans;
+// }
+
+// console.log(squreRoot(64));
+
+//armstrong number
+// function armStrongNUmber(N) {
+//   let i;
+
+//   for (i = 1; i <= N; i++) {
+//     let arrayOfN = i
+//       .toString()
+//       .split("")
+//       .map((v) => parseInt(v) ** 3);
+
+//     const totalVal = arrayOfN.reduce((t, v) => t + v, 0);
+
+//     if (i == totalVal) {
+//       console.log(i);
+//       //   break;
+//     }
+//   }
+// }
+// armStrongNUmber(153)
+
+// For a given number A, print its multiplication table having the first 10 multiples.
+// input : 2
+// o/p :
+// 2 * 1 = 2
+//  2 * 2 = 4
+//  2 * 3 = 6
+//  2 * 4 = 8
+//  2 * 5 = 10
+//  2 * 6 = 12
+//  2 * 7 = 14
+//  2 * 8 = 16
+//  2 * 9 = 18
+//  2 * 10 = 20
+
+// function multiplicationTable(N){
+//   let i = 1;
+//   for (i; i <= 10; i++) {
+//     console.log(N + " * " + i + " = " + N * i);
+//   }
+// }
+// multiplicationTable("10");
+
+// q3)
+function inter(N) {
+  let iteration = 0;
+  for (let i = 0; i <= N; i++) {
+    iteration++;
+  }
+  console.log({N ,iteration});
 }
-squreRoot(81);
+inter(9);

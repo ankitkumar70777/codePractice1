@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import SayHello from "./modules/reactTS/sayHello";
+import Status from "./modules/reactTS/status";
+import Heading from "./modules/reactTS/heading";
 
 function App() {
+
   return (
     <div className="App">
-      <SayHello name={"ankitkumar ravidas"} age={23}/>
+      <Status status="success" />
+      <Heading>Heading 1</Heading>
     </div>
   );
 }

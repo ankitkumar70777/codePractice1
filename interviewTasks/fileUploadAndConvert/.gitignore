@@ -1,0 +1,14 @@
+node_modules/
+node_modules/*
+/node_modules/*
+node_modules/
+package-lock.json
+.env
+.next/
+.next12 /*
+/.next/*
+.next/
+./jenkinsfile-staging
+./jenkinsfile
+jenkinsfile-staging
+jenkinsfile

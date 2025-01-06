@@ -1,0 +1,17 @@
+# Ignore artifacts:
+build
+.next
+node_modules
+
+# Ignore other files:
+package-lock.json
+yarn.lock
+Dockerfile
+jenkinsfile
+jenkinsfile-staging
+LICENSE
+newrelic.js
+.env
+svgs
+public
+README.md

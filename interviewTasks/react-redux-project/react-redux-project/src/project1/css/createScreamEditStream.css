@@ -1,0 +1,54 @@
+.CreateOrEditStream{
+    /* border:1px solid red; */
+}
+
+.CreateOrEditStream h1{
+    text-align: left;
+}
+
+.CreateOrEditStream .StreamList{
+    border-top: 1px solid gray; 
+    /* border-bottom: 1px solid gray;  */
+}
+.CreateOrEditStream .createScreams button {
+    margin-top: 3rem;
+}
+
+.CreateOrEditStream .singleStream{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
+    padding:5px 0;
+    border-bottom: 1px solid gray;
+}
+
+.CreateOrEditStream .cameraAndTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CreateOrEditStream .title{
+    margin-left: 15px;
+}
+
+.CreateOrEditStream .title p{
+    text-align: left;
+    margin:0
+}
+
+.CreateOrEditStream .title p:first-child{
+    color: rgb(64, 25, 236);
+}
+
+.CreateOrEditStream .addStreamIntoDb{
+    margin-top: 10rem;;
+}
+.CreateOrEditStream .addStreamIntoDb .titleOfPage, .CreateOrEditStream .addStreamIntoDb .disriptionOfPage{
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 700;
+}
+.CreateOrEditStream .addStreamIntoDb .titleOfPage p, .CreateOrEditStream .addStreamIntoDb .disriptionOfPage p{
+    margin-bottom: 2px;
+}

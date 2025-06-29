@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build:dev": "NODE_ENV=development next build",
     "devServer": "NODE_OPTIONS='--inspect'  next dev",
+    "devServerWindows": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build:prod": "next build",
     "start": "next start",
     "lint": "next lint"
